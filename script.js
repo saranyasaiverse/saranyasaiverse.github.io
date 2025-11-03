@@ -1,7 +1,7 @@
 // Floating WhatsApp button click
 document.addEventListener("DOMContentLoaded", function() {
   const whatsappBtn = document.createElement("a");
-  whatsappBtn.href = "https://wa.me/919361157556"; // your WhatsApp number here
+  whatsappBtn.href = "https://wa.me/918939701718"; // your WhatsApp number here
   whatsappBtn.target = "_blank";
   whatsappBtn.className = "floating-whatsapp";
   whatsappBtn.innerHTML = "💬";
