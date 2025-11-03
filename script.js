@@ -1,97 +1,33 @@
-/* SaiVerse Solutions JavaScript */
+// Floating WhatsApp button click
+document.addEventListener("DOMContentLoaded", function() {
+  const whatsappBtn = document.createElement("a");
+  whatsappBtn.href = "https://wa.me/919361157556"; // your WhatsApp number here
+  whatsappBtn.target = "_blank";
+  whatsappBtn.className = "floating-whatsapp";
+  whatsappBtn.innerHTML = "💬";
+  document.body.appendChild(whatsappBtn);
+});
 
 // Smooth scroll for anchor links
-const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    const targetId = link.getAttribute('href');
-    const target = document.querySelector(targetId);
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 80,
-        behavior: 'smooth'
-      });
-    }
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
 
-// Review form submission (basic confirmation only)
-const reviewForm = document.getElementById('review-form');
-if (reviewForm) {
-  reviewForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = this.name.value.trim();
-    const country = this.country.value.trim();
-    const feedback = this.feedback.value.trim();
-
-    if (name && country && feedback) {
-      alert('Thank you for your review, ' + name + '!');
-      this.reset();
-    } else {
-      alert('Please fill in all fields.');
-    }
-  });
-}
-
-// Scroll fade-in animation using IntersectionObserver
-const faders = document.querySelectorAll('section');
-const options = {
-  threshold: 0.2
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('visible');
-    observer.unobserve(entry.target);
-  });
-}, options);
-
-faders.forEach(section => {
-  section.classList.add('fade-in');
-  appearOnScroll.observe(section);
-});
-
-// WhatsApp floating button
-const waBtn = document.createElement('a');
-waBtn.href = 'https://wa.me/918939701718';
-waBtn.target = '_blank';
-waBtn.innerHTML = '💬';
-waBtn.style.position = 'fixed';
-waBtn.style.bottom = '20px';
-waBtn.style.right = '20px';
-waBtn.style.fontSize = '2rem';
-waBtn.style.background = '#25d366';
-waBtn.style.color = '#fff';
-waBtn.style.padding = '10px 14px';
-waBtn.style.borderRadius = '50%';
-waBtn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
-waBtn.style.textDecoration = 'none';
-waBtn.style.zIndex = '999';
-document.body.appendChild(waBtn);
-
-// Align Booking and Social Icons better
-window.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.hero');
-  const bookingBtn = document.querySelector('.hero .btn');
-  const socialIcons = document.querySelector('.social-icons');
-
-  if (hero && bookingBtn && socialIcons) {
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('cta-wrapper');
-    wrapper.appendChild(bookingBtn);
-    wrapper.appendChild(socialIcons);
-    hero.appendChild(wrapper);
+// Back to top button
+window.addEventListener("scroll", function() {
+  const topBtn = document.getElementById("backToTop");
+  if (window.scrollY > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
   }
 });
 
-// Booking form basic confirmation
-const bookingForm = document.getElementById('booking-form');
-if (bookingForm) {
-  bookingForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Your details have been submitted successfully! We will review and respond before your session.');
-    this.reset();
-  });
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
