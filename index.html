@@ -3,183 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SaiVerse Solutions | Global Business Support & BPO Services</title>
+  <title>SaiVerse Solutions</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
   <!-- Main Styles -->
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar">
-    <div class="container nav-flex">
-      <div class="brand">
-        <img src="logo.png" alt="SaiVerse Solutions Logo" class="logo" />
-        <span class="brand-name">SaiVerse Solutions</span>
+<!-- ================= HEADER / NAV ================= -->
+<header>
+  <div class="container">
+    <nav style="display:flex;align-items:center;justify-content:space-between;gap:20px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="logo.png" alt="SaiVerse Solutions Logo" style="height:42px;">
+        <strong style="color:#fff;font-size:20px;">SaiVerse Solutions</strong>
       </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#consultation">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+      <div style="display:flex;gap:18px;">
+        <a href="#about" class="btn secondary">About</a>
+        <a href="#services" class="btn secondary">Services</a>
+        <a href="#pricing" class="btn secondary">Pricing</a>
+        <a href="#contact" class="btn secondary">Contact</a>
+      </div>
+    </nav>
 
-  <!-- HERO / HEADER -->
-  <header>
-    <div class="container">
-      <h1>Global Business Support & Payment Follow-up Solutions</h1>
-      <p>
-        We help international businesses manage client communication, follow-ups,
-        and payment coordination — professionally, ethically, and remotely.
-      </p>
+    <!-- HERO -->
+    <div style="margin-top:70px;max-width:700px;">
+      <h1>Building Smart Digital Solutions for Growing Businesses</h1>
+      <p style="margin-top:18px;">SaiVerse Solutions helps startups, tuition centers, and businesses grow online with modern websites, branding, automation, and AI-powered services.</p>
       <div class="hero-buttons">
-        <a href="#consultation" class="btn primary">Book a Consultation</a>
-        <a href="#services" class="btn secondary">Start a Monthly Contract</a>
+        <a href="#pricing" class="btn primary">View Plans</a>
+        <a href="#contact" class="btn secondary">WhatsApp Us</a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2>About SaiVerse Solutions</h2>
-      <p>
-        SaiVerse Solutions is a professional support services company offering
-        international BPO communication and payment follow-up services for
-        global businesses. We work as a calm, reliable extension of your team,
-        ensuring your clients are handled with respect, clarity, and consistency.
-      </p>
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <h2>About SaiVerse Solutions</h2>
+    <p>SaiVerse Solutions is a future-focused digital service company founded to help individuals, tuition centers, and small businesses build a strong online presence. We combine clean design, modern technology, and practical business understanding.</p>
+  </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="founder-section" style="background:#f5f7fb;">
+  <div class="container">
+    <img src="founder.jpg" alt="Founder">
+    <div>
+      <h2>Founder</h2>
+      <p>SaiVerse Solutions is founded by <strong>Saranya</strong>, with a vision to create trustworthy, affordable, and professional digital solutions for real-world business needs.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOUNDER -->
-  <section class="founder-section">
-    <div class="container">
-      <img src="founder.jpg" alt="Saranya S - Founder, SaiVerse Solutions" />
-      <div>
-        <h2>Saranya S</h2>
-        <h3>Founder & Lead Consultant</h3>
-        <p>
-          With over 17 years of experience in client handling, payment coordination,
-          follow-ups, documentation, and communication management, Saranya leads
-          SaiVerse Solutions with a calm, ethical, and results-focused approach.
-        </p>
-        <p>
-          SaiVerse operates as a company-led service model, ensuring professional
-          continuity, confidentiality, and long-term reliability for international clients.
-        </p>
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card"><h3>Website Design</h3><p>Professional, responsive websites using modern design standards.</p></div>
+      <div class="card"><h3>Business Branding</h3><p>Logos, content structure, and brand positioning.</p></div>
+      <div class="card"><h3>Tuition Center Setup</h3><p>End-to-end digital setup for tuition & coaching centers.</p></div>
+      <div class="card"><h3>AI & Automation</h3><p>Smart tools to save time and improve efficiency.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2>Pricing Plans</h2>
+    <p style="margin-bottom:40px;">Simple, transparent pricing</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Starter</h3>
+        <p>₹2,999</p>
+        <p>1-page website, basic support</p>
+      </div>
+      <div class="card">
+        <h3>Business</h3>
+        <p>₹5,999</p>
+        <p>Multi-page site, branding, WhatsApp</p>
+      </div>
+      <div class="card">
+        <h3>Premium</h3>
+        <p>₹9,999</p>
+        <p>Full setup, automation, priority support</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WHY CHOOSE -->
-  <section>
-    <div class="container">
-      <h2>Why Choose SaiVerse</h2>
-      <div class="grid">
-        <div class="card">International-standard communication</div>
-        <div class="card">Calm, respectful, non-aggressive follow-ups</div>
-        <div class="card">Prepaid, transparent pricing</div>
-        <div class="card">Remote support with no location dependency</div>
-        <div class="card">Confidential & professional handling</div>
-        <div class="card">Suitable for US, UK, UAE, Canada & Australia</div>
-      </div>
+<!-- ================= REVIEWS ================= -->
+<section id="reviews">
+  <div class="container">
+    <h2>Client Reviews</h2>
+    <div class="grid">
+      <div class="card review">“Very professional service and excellent support.”<strong>- Client</strong></div>
+      <div class="card review">“Our tuition center visibility improved a lot.”<strong>- Parent</strong></div>
+      <div class="card review">“Clean design and timely delivery.”<strong>- Business Owner</strong></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>International Client Communication & BPO Support</h3>
-          <p>Email handling, client calls, appointment scheduling, reminders,
-          basic customer support, and weekly reports.</p>
-          <p><strong>Work Model:</strong> Monthly prepaid contract with fixed hours
-          and defined communication limits.</p>
-        </div>
-        <div class="card">
-          <h3>International Payment Follow-up & Recovery Support</h3>
-          <p>Polite payment reminders, invoice follow-ups, outstanding tracking,
-          escalation email drafting, and weekly payment status reports.</p>
-          <p><strong>Note:</strong> Non-legal, ethical coordination only.</p>
-        </div>
-      </div>
+<!-- ================= PAYMENT ================= -->
+<section id="payment" style="background:#f5f7fb;">
+  <div class="container">
+    <h2>Payment Details</h2>
+    <p>Payments accepted via UPI, GPay, PhonePe & Bank Transfer.</p>
+    <p><strong>UPI ID:</strong> yourupi@bank</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT / WHATSAPP ================= -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <p>📞 WhatsApp: <a href="https://wa.me/918939701718" target="_blank">Chat on WhatsApp</a></p>
+      <p>📧 Email: saiversesolutions@gmail.com</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PRICING -->
-  <section class="pricing" id="consultation">
-    <div class="container">
-      <h2>Pricing Structure</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Priority Consultation</h3>
-          <p><strong>$499 USD</strong> – Up to 1 hour</p>
-          <p>First-preference consultation only. Non-refundable and non-adjustable.
-          Any extended scope will be discussed and charged separately.</p>
-        </div>
-        <div class="card">
-          <h3>BPO Hourly Support</h3>
-          <p><strong>$22 / hour</strong></p>
-          <p>Minimum 120 hours/month. Includes calls, emails, follow-ups,
-          and weekly reports. Fixed hours model.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section>
-    <div class="container">
-      <h2>Our Experience at a Glance</h2>
-      <div class="grid">
-        <div class="card"><strong>17+ Years</strong><br/>Client Handling Experience</div>
-        <div class="card"><strong>100%</strong><br/>Prepaid Engagement Model</div>
-        <div class="card"><strong>5+</strong><br/>Countries Served</div>
-        <div class="card"><strong>Weekly</strong><br/>Structured Reporting</div>
-        <div class="card"><strong>Ethical</strong><br/>Non-Aggressive Approach</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section>
-    <div class="container">
-      <h2>Client Reviews</h2>
-      <div class="grid">
-        <div class="card review">“Very professional and calm communication. Our overseas follow-ups became much smoother.”<strong>— US Business Client</strong></div>
-        <div class="card review">“Ethical payment coordination without pressure. Highly reliable service.”<strong>— UK Consultant</strong></div>
-        <div class="card review">“Clear weekly reports and disciplined work style.”<strong>— UAE Services Firm</strong></div>
-        <div class="card review">“Trustworthy handling of sensitive client conversations.”<strong>— Canadian Agency</strong></div>
-        <div class="card review">“Consistent support that feels like an in-house team.”<strong>— Australian SME</strong></div>
-      </div>
-      <p style="margin-top:20px;">New clients may submit reviews after service engagement.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section>
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-box">
-        <p><strong>Email:</strong> info@saiverse.org</p>
-        <p><strong>Mobile / WhatsApp:</strong> +91 89397 01718</p>
-        <p>Payment link will be shared after agreement confirmation.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
-  </footer>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
