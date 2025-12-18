@@ -152,7 +152,12 @@ header p {
 .pricing p {
   color: #ffffff;
 }
-
+/* FIX: Pricing card text visibility */
+.pricing .card h2,
+.pricing .card h3,
+.pricing .card p {
+  color: #000000;
+}
 .pricing .card {
   color: #000000;
 }
