@@ -144,22 +144,43 @@ header p {
 }
 
 /* PRICING */
+/* PRICING SECTION */
 .pricing {
-  background: var(--navy);
+  background: #0f172a; /* deep navy */
+  padding: 80px 0;
 }
 
-.pricing h2,
-.pricing p {
+.pricing h2 {
   color: #ffffff;
+  margin-bottom: 10px;
 }
+
+.pricing > .container > p {
+  color: #cbd5e1;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
 /* FIX: Pricing card text visibility */
-.pricing .card h2,
-.pricing .card h3,
-.pricing .card p {
-  color: #000000;
-}
 .pricing .card {
   color: #000000;
+}
+
+.pricing .card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.pricing .card h3 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.pricing .card strong {
+  font-size: 28px;
+  color: #1d4ed8; /* premium blue */
 }
 
 /* REVIEWS */
